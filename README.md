@@ -5,9 +5,14 @@
 Suite au changement de projet, nous allons partir des projets de base fournis par Unity Learn pour découvrir les matériaux et les lumières.
 Les projets shaders (et matériaux) et lumière ont été associé et transférés en version 2021.3.15f1.
 
+## Rappels de vocabulaire 
+
+- Shader : script/code permettant de définir comment un modèle sera afficher à l'écran
+- Matérial : élément créé à partir d'un shader pour être appliqué à un mesh. Comporte toutes les informations nécessaire pour que le shader soit calculé
+
 ## Assets disponibles
 
-- Les deux répertoire CreatorCore viennent d'unity learn : ils sont simples mais géniaux pour des exercices d'explication ou des tests. Les deux ont des scènes finales qui peuvent servir d'exemples. Attention certains éléments doivent être réalisés en exercice donc vous n'aurez pas forcément tous les exemples.
+- Les deux répertoires CreatorCore viennent d'unity learn : ils sont simples mais géniaux pour des exercices d'explication ou des tests. Les deux ont des scènes finales qui peuvent servir d'exemples. Attention certains éléments doivent être réalisés en exercice donc vous n'aurez pas forcément tous les exemples possibles.
 - Les  répertoires free furniture et simple garage sont des esemple de props pour habiller rapidement.
 - SI vous voulez utiliser d'autres assets : pensez a faire de la place en suprimant soit le garage soit les fournitures. Gardez les projets unity pour le lundi de la rentrée 
 
