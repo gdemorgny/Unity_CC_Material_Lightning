@@ -4,6 +4,25 @@ using UnityEngine;
 
 public class MaterialChangeColor : MonoBehaviour, IUsableObject
 {
-    public void UseObject() { Debug.Log("Ca Marche !!"); }
+    [SerializeField] private Color[] _colors;
+    private MeshRenderer _renderer;
+    private int _actualColor = -1;
+    private void Start()
+    {
+        _renderer = GetComponent<MeshRenderer>();
+        ChangeColor();
+    }
+
+    public void UseObject() { ChangeColor(); }
+
+    private void ChangeColor()
+    {
+        _actualColor++;
+        if(_actualColor >= _colors.Length)
+        {
+            _actualColor = 0;
+        }
+        _renderer.material.color = _colors[_actualColor];
+    }
 
 }
