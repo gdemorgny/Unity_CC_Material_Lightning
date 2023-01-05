@@ -1,6 +1,5 @@
 
-
-public interface IUsableObject
+public interface IUsableObject 
 {
-   public void UseObject() { }
+    public void UseObject() { }
 }

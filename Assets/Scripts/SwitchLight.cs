@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class SwitchLight : MonoBehaviour,IUsableObject
 {
+
     [SerializeField] private Light _light;
     [SerializeField] private MeshRenderer _lightEmissive;
 
+    public void UseObject() {
+        ToggleLight();
+    }
 
     private void ToggleLight()
     {
@@ -19,11 +23,5 @@ public class SwitchLight : MonoBehaviour,IUsableObject
         {
             _lightEmissive.material.DisableKeyword("_EMISSION");
         }
-    }
-
-    public void UseObject() {
-
-        ToggleLight();
-
     }
 }
